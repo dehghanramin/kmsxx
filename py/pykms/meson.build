@@ -51,7 +51,7 @@ endif
 
 pykms_args = [ '-fvisibility=hidden' ]
 
-destdir = get_option('libdir') / 'python' + py3_dep.version() / 'site-packages/pykms'
+destdir = '/snap/ramin-image-stream/current/lib' / ('python' + py3_dep.version()) / 'site-packages' / 'pykms'
 
 pykms = shared_module('pykms',
                       pykms_sources,
